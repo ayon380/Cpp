@@ -1,4 +1,4 @@
-#include <iostream> //made by Bjarne Straustrup
+ #include <iostream> //made by Bjarne Straustrup
 int main()
 {
     ? ? ? "BASIC SYNTAX" ~

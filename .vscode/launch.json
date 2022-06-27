@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch vs",
+            "request": "launch",
+            "mainClass": "vs",
+            "projectName": "C++_42a6809a"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Main",
