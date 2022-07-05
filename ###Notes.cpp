@@ -1,4 +1,4 @@
- #include <iostream> //made by Bjarne Straustrup
+#include <iostream> //made by Bjarne Straustrup
 int main()
 {
     ? ? ? "BASIC SYNTAX" ~
@@ -323,5 +323,55 @@ int main()
         Ex-bitset<20> set(100) , (bitset of capacity 20 initialized with binary value of 100)
         */
 
+        ? ? ? "SET" ~
+        /*
+        Sets are a type of associative containers in which each element has to be unique because the value of the element identifies it. The values are stored in a specific order.
+        Properties:
+        -> All the elements in a set have unique values.
+        -> The set stores the elements in sorted order.
+        -> The value of the element cannot be modified once it is added to the set, though it is possible to remove and then add the modified value of that element. Thus, the values are immutable.
+        -> Sets follow the Binary search tree implementation.
+        -> The values in a set are unindexed
+        * use the greater<int> to store the values in the set in descending order , by default it is inserted in ascending order .
+        */
+
+        ? ? ? "SET FUNCTIONS" ~
+        /*
+        -> upper_bound(K) - returns iterator pointing to just the next element after the value given.
+        -> lower_bound(K) - If the value is present in the set then this function will return the iterator pointing to the same element only. But if the element K is not present in the set then it will point to just the nearest value, greater than K.
+        -> erase(iterator) - deletes the element the iterator points to.
+        -> erase(value) - deletes all the instances of the value from the set.
+        -> clear - removes all the elements from the set.
+        -> find(K) - returns an iterator pointing to the element in the set.
+        -> count(K) - returns 1 or 0 based on if the element is present or not .
+        */
+
+        ? ? ? "UNORDERED SET" ~
+        /*
+        An unordered_set is implemented using a hash table where keys are hashed into indices of a hash table so that the insertion is always randomized. All operations on the unordered_set takes constant time O(1) on an average which can go up to linear time O(n) in worst case which depends on the internally used hash function, but practically they perform very well and generally provide a constant time lookup operation.
+        */
+
+        ? ? ? "MULTISET" ~
+        /*
+        Multisets are a type of associative containers similar to the set, with the exception that multiple elements can have the same values.
+        */
+
+        ? ? ? "HEAP" ~
+        /*
+        A Heap is a special Tree-based data structure in which the tree is a complete binary tree. Generally, Heaps can be of two types:
+        ->    Max-Heap: In a Max-Heap the key present at the root node must be greatest among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.
+        ->    Min-Heap: In a Min-Heap the key present at the root node must be minimum among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.
+        */
+
+        ? ? ? "HEAPS STL" ~
+        /*
+        -> make_heap(iterator , iterator) - converts a container to a heap.
+        -> front() - returns the first element or the heap ,i.e the maximum element in the heap.
+        -> push_heap() - pushes an element into the heap.
+        -> pop_heap() - deletes an element from the heap ,i.e deletes the maximum element from the heap.
+        -> sort_heap() - sorts the elements in the heap , but after sorting it is no more a heap.
+        -> is_heap() - checks if it is heap or not.
+        -> is_heap_until() - returns the iterator of the element upto which the container is a heap.
+        */
         return 0;
 }
