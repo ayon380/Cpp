@@ -322,7 +322,7 @@ int main()
         Bitset is an array of boolean values which is not stored separately, but instead in a compressed format , such thagt each value only take size of 1 bit only , operations are much more faster on  bitsets as compared to arrays or vectors , but the size of bitset has to be determined beforehand ,instead of dynamically in the case of vectors.
         Ex-bitset<20> set(100) , (bitset of capacity 20 initialized with binary value of 100)
         */
-       
+
         ? ? ? "SET" ~
         /*
         Sets are a type of associative containers in which each element has to be unique because the value of the element identifies it. The values are stored in a specific order.
@@ -374,5 +374,33 @@ int main()
         -> is_heap_until() - returns the iterator of the element upto which the container is a heap.
         */
 
+        ? ? ? "PRIORITY QUEUE" ~
+        /*
+        Priority Queue are a kind of container adapters which are specially designed, such that the first element is either the largest or the smallest element in the queue , by default priority queue acts as max heap , but we can convert it into a min heap by the following syntax : priority_queue<int,vector<int>,greater<int>> minheap;
+        *In case of priorityQueues with pairs , it is sorted by default on the basis of first element of the pair.
+        */
+
+        ? ? ? "HASHING" ~
+        /*
+        Suppose we have to keep track of a large dataset , and the time complexity of accessing , inserting and deleting must be very low, so here comes hashing , in hashing , time complexity of above functions is often O(1) and in worst case O(n) . Hashing works by large dataset into hash table by using some hash function .
+        -> Hash Table - An array that stores pointers to records corresponding to a given phone number. An entry in hash table is NIL if no existing phone number has hash function value equal to the index for the entry.  In simple terms, we can say that hash table is a generalization of array. Hash table gives the functionality in which a collection of data is stored in such a way that it is easy to find those items later if required. This makes searching of an element very efficient.
+        -> Hash Function -  A function that converts a given big phone number to a small practical integer value. The mapped integer value is used as an index in hash table. So, in simple terms we can say that a hash function is used to transform a given key into a specific slot index. Its main job is to map each and every possible key into a unique slot index. If every key is mapped into a unique slot index, then the hash function is known as a perfect hash function. It is very difficult to create a perfect hash function but our job as a programmer is to create such a hash function with the help of which the number of collisions are as few as possible.
+        */
+
+        ? ? ? "HASHING COLLISION" ~
+        /*
+        Since a hash function gets us a small number for a big key, there is possibility that two keys result in same value. The situation where a newly inserted key maps to an already occupied slot in hash table is called collision and must be handled using some collision handling technique. Following are the ways to handle collisions:
+        -> Chaining - The idea is to make each cell of hash table point to a linked list of records that have same hash function value. Chaining is simple, but requires additional memory outside the table.
+        -> Open Addressing - In open addressing, all elements are stored in the hash table itself. Each table entry contains either a record or NIL. When searching for an element, we examine the table slots one by one until the desired element is found or it is clear that the element is not in the table.
+        */
+
+        ? ? ? "OPEN ADDRESSING" ~
+        /*
+        Like separate chaining, open addressing is a method for handling collisions. In Open Addressing, all elements are stored in the hash table itself. So at any point, the size of the table must be greater than or equal to the total number of keys (Note that we can increase table size by copying old data if needed). This approach is also known as closed hashing.
+        -> Linear Probing - In linear probing, the hash table is searched sequentially that starts from the original location of the hash. If in case the location that we get is already occupied, then we check for the next location. 
+        -> Quadratic Probing - If you observe carefully, then you will understand that the interval between probes will increase proportionally to the hash value. Quadratic probing is a method with the help of which we can solve the problem of clustering that was discussed above.  This method is also known as mid-square method. In this method we look for i2‘th slot in i’th iteration. 
+        -> Double Hashing - The intervals that lie between probes is computed by another hash function. Double hashing is a technique that reduces clustering in an optimized way. In this technique, the increments for the probing sequence are computed by using another hash function. 
+        */
+       
         return 0;
 }
