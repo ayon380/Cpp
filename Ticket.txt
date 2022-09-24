@@ -1,0 +1,11 @@
+TRAIN No :                    12245
+TRAIN NAME :                  HWH-SMVT DURONTO EXP 
+ORIGINATING STATION :         HWH
+DESTINATION STATION :         BZA
+DEPARTURE TIME :              23:0
+ARRIVAL TIME :                20:12 Next Day
+CLASS :                       2A
+DATE :                        26/9/2022
+COACH NO - SEAT :             A2-44
+PASSENGER NAME                1 : ayon  M  12/02/2003
+
