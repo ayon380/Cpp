@@ -114,9 +114,13 @@ int main()
         /*
         There are 5 forms of inheritance in C++.Following single inheritance, multiple inheritance, hierarchical inheritance, multi level inheritance, and hybrid inheritance.
         -->  "SINGLE INHERITANCE" ---  Single Inheritance is a type of inheritance in which the derived class is inherited from only one base class.For example,Programmer class from an employee class,Programmer class will be able to implement all of the functions from the employee class..
+
         --> "MULTIPLE INEHRITANCE" --- Multiple inheritance is a kind of inheritance in which the derived classes inherit tent from more than one base class.For example, we take three classes, employee, assistant and programmer.If the programmer class is inherited from the employee and assistant classes, that means that a programmer class can now inherit all the functions from the employee as well as the assistant class.
+
         --> "HIERARCHIAL INHERITANCE" --- Hierarchical inheritance is a type of inheritance in which several derived classes, at inherited from only a single base class.For example, if you take employee, manager and programmer classes.If the programmer and manager classes are inherited from the employee class.Then the programmer as well as the manager class will be able to implement all of the functions from the employee class.
+
         --> "MULTILEVEL INHERITANCE" -- Multi level inheritance is a kind of inheritance in which the derived class is inherited from another derived class.For example, we take the take three classes animal, mammal and cow.If the mammal class is inherited from the animal class and the cow classes is inherited from the mammal class, the cow class will be able to inherit all the function from the mammal class.
+
         --> "HYBRID INHERITANCE" -- Hybrid inheritance is a combination of multiple inheritance and multi level inheritance. In hybrid inheritance classes derived from two classes, as in the case of multiple inheritance. However, the parent classes is not a base class. For example, we have four classes “animal”, “mammal”, “bird”, and “bat”. If “mammal”  and “bird” classes are inherited from the “animal” class and “bat” class is inherited from “mammal” and “bird” classes which means that “mammal” and “bird” classes can now implement the functionalities of “animal” class and “bat” class can now implement the functionalities of “mammal” and “bird” classes.
         */
 
@@ -129,10 +133,10 @@ int main()
         /*
         There are three types of visibility modes, namely public, protected and private.In the public mode, the public members of the base class becomes the public members of the derived class.And in the private mode, the public members of the base class becomes the private members of the derived class. Protected mode means that the data members will be private in the base class , but can be inherited in the derived class.
 
-                                                    Public Derivation      	Private Derivation    	Protected Derivation
-        Private members           	Not Inherited              	Not Inherited              	Not Inherited
-        Protected members     	Protected                    	Private                         	Protected
-        Public members           	 Public	                             Private                         	  Protected
+                                    Public Derivation      	Private Derivation    	Protected Derivation
+        Private members           	Not Inherited             Not Inherited             Not Inherited
+        Protected members     	      Protected                	Private                   Protected
+        Public members           	    Public                   Private                  Protected
         */
 
         ? ? ? "AMBIGUITY RESOLUTION" ~(36)
@@ -397,10 +401,239 @@ int main()
         ? ? ? "OPEN ADDRESSING" ~
         /*
         Like separate chaining, open addressing is a method for handling collisions. In Open Addressing, all elements are stored in the hash table itself. So at any point, the size of the table must be greater than or equal to the total number of keys (Note that we can increase table size by copying old data if needed). This approach is also known as closed hashing.
-        -> Linear Probing - In linear probing, the hash table is searched sequentially that starts from the original location of the hash. If in case the location that we get is already occupied, then we check for the next location. 
-        -> Quadratic Probing - If you observe carefully, then you will understand that the interval between probes will increase proportionally to the hash value. Quadratic probing is a method with the help of which we can solve the problem of clustering that was discussed above.  This method is also known as mid-square method. In this method we look for i2‘th slot in i’th iteration. 
-        -> Double Hashing - The intervals that lie between probes is computed by another hash function. Double hashing is a technique that reduces clustering in an optimized way. In this technique, the increments for the probing sequence are computed by using another hash function. 
+        -> Linear Probing - In linear probing, the hash table is searched sequentially that starts from the original location of the hash. If in case the location that we get is already occupied, then we check for the next location.
+        -> Quadratic Probing - If you observe carefully, then you will understand that the interval between probes will increase proportionally to the hash value. Quadratic probing is a method with the help of which we can solve the problem of clustering that was discussed above.  This method is also known as mid-square method. In this method we look for i2‘th slot in i’th iteration.
+        -> Double Hashing - The intervals that lie between probes is computed by another hash function. Double hashing is a technique that reduces clustering in an optimized way. In this technique, the increments for the probing sequence are computed by using another hash function.
         */
-       
+
+        ? ? ? "TIME COMPLEXITY" ~
+        /*
+        Time complexity of an algorithm is used to measure the amount of time that the algorithm requires to run.
+        Time complexity are of three types. O notation, Omega notation, and Sigma notation.
+        1.O notations signifies is the worst case scenario in which algorithm takes the longest time to run.
+        2.Omega notation signifies the best case scenario in which the algorithm takes the least amount of time to run.
+        3.Sigma notation signifies the average time the algorithm will take to execute.
+        For example, a single for loop will have a time complexity of O(n) and a nested for loop will have time complexity of O(n^2).
+        */
+
+        ? ? ? "SPACE COMPLEXITY" ~
+        /*
+        Space complexity of an algorithm is the amount of memory that algorithm will take to execute.
+        */
+
+        ? ? ? "SELECTION SORT" ~(110)
+        /*
+        Selection sort work works by picking up the minimum element from the array and putting it at the beginning of the array  and just doing it until the whole array become sorted.
+        Time COMPLEXITY : O(n^2)
+        */
+
+        ? ? ? "BUBBLE SORT" ~(111)
+        /*
+        Bubble Sort works by swapping adjacent elements in the array, till the array is fully sorted.
+        Time COMPLEXITY : O(n^2)
+        */
+
+        ? ? ? "INSERTION SORT" ~(112)
+        /*
+        Insertion sort works by putting the elements of the unsorted array into a sorted array till the whole array get  sorted.
+        Time COMPLEXITY : O(n^2).
+        */
+
+        ? ? ? "SIEVE OF ERATOSTHENES" ~(135)
+        /*
+        In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit. It does so by iteratively marking as composite (i.e., not prime) the multiples of each prime, starting with the first prime number, 2. The multiples of a given prime are generated as a sequence of numbers starting from that prime, with constant difference between them that is equal to that prime.
+        */
+
+        ? ? ? "INCLUSION EXCLUSION PRINCIPLE" ~(138)
+        /*
+        Inclusion-Exclusion principle says that for any number of finite sets A_1, A_2, A_3... A_i  , Union of the sets is given by = Sum of sizes of all single sets – Sum of all 2-set intersections + Sum of all the 3-set intersections – Sum of all 4-set intersections .. + (-1)^{i+1}  Sum of all the i-set intersections.
+        */
+
+        ? ? ? "EUCLID'S ALGORITHM" ~(139)
+        /*
+        Euclid's algorithm stated the modulus of two numbers (x,y), shares the common hcf with y .
+        for example-42,24(42-24=18,24-18=6,18-6=12,12-6=6,6-6=0)
+        */
+
+        ? ? ? "MERGE SORT" ~(161)
+        /*
+        Merge sort works on Divide and Conquere Algorithm , what merge sort does is it divides the array into halves and conrinues to divide it into smaller arrays , and then sorts the values in the final array.
+        Time Complexity : O(nlog(n))
+        For more details -https://www.geeksforgeeks.org/merge-sort/
+        */
+
+        ? ? ? "QUICK SORT" ~(162)
+        /*
+        Quick Sort works on Divide and Conquere Algorithm , what merge sort does is it sorts the values in the array around the pivot element and finallly sorts into the final array.
+        Time Complexity : O(nlog(n))
+        For more details -https://www.geeksforgeeks.org/quick-sort/
+        */
+
+        ? ? ? "COUNTING SORT" ~(163)
+        /*
+        Counting Sort works by first counting the occurences of each element,and then it adds the occurences of each element to each other, then sets the previous value in a new array ,and then array is again initialized with the sorted values of the output array.
+        Time Complexity : O(n+k),(n=number of elements , k= range of elements)
+        For more details -https://www.geeksforgeeks.org/counting-sort/
+        */
+
+        ? ? ? "DNF(Dutch National Flag) SORT" ~(164)
+        /*
+        DNF Sort works by using three iterators : low ,mid , high, if the value is 0, we swap the values in the mid and low pos , but if it is 1 , we increment the value of mid , and if it is 2 , we swap mid and high values ,and decrement the high iterator, and finallly the array gets sorted .
+        Time COMPLEXITY : O(n)
+        For more details : http://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+        **This only works for 0s, 1s and 2s.
+        */
+
+        ? ? ? "WAVE SORT" ~(165)
+        /*
+        Wave Sort sorts the elements of an array in a wave form by simple swapping.
+        Time COMPLEXITY : O(n)
+        For more details : https://www.geeksforgeeks.org/sort-array-wave-form-2/
+        */
+
+        ? ? ? "LINKED LIST" ~(167)
+        /*
+        Linked List is a linear data structure,it is represented by a pointer linked to the first node in the linked list, the first node is called the head , if the linked list is empty, it return NULL.Each node consists of two parts -value and a pointer.
+        For more details : https://www.geeksforgeeks.org/linked-list-set-1-introduction/
+        */
+
+        ? ? ? "CIRCULAR LINKED LIST" ~(171)
+        /*
+        Circular Linked List is a kind of linked list, in which the last node of the linked list does not point to Null pointer , instead it points to another node in the linked list , or even the head of the linked list , thus creating a circular chain of nodes.
+        */
+
+        ? ? ? "DOUBLY LINKED LIST" ~(172)
+        /*
+        Doubly Linked List is a kind of linked list , which contains two pointer - previous and next pointers, which allow  us to traverse the list from the front as well as from the back, thus making the insertion as well as deletion faster in the linked list at the expense of additional memory consumption.
+        */
+
+        ? ? ? "STACK" ~(183)
+        /*
+        Stack is a linear data structure which follows the principle of LIFO(Last In First Out) , There are mainly three operations in Stack:
+        Push: Adds an item in the stack. If the stack is full, then it is said to be an Overflow condition.
+        Pop: Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition.
+        Peek or Top: Returns the top element of the stack.
+        isEmpty: Returns true if the stack is empty, else false.
+        */
+
+        ? ? ? "STACK STL FUNCTIONS" ~(185)
+        /*
+        1.empty()- Returns whether the stack is empty.
+        2.push()-Pushes an item into the stack.
+        3.pop()-Removes an item from the stack.
+        4.top()-Returns the top element in the stack.
+        5.size()-Returns the size of the stack.
+        6.swap()-swap values with another stack of same type.
+        7.emplace()-While push() function inserts a copy of the value or the parameter passed to the function into the container at the top, the emplace() function constructs a new element as the value of the parameter and then adds it to the top of the container.
+        */
+
+        ? ? ? "INFIX, PREFIX AND POSTFIX EXPRESSION" ~(186)
+        /*
+        1. Infix expression is the normal expression that we humans use to evaluate  mathematical statements , We use BODMAS Rule to evaluate infix expressions.
+        Syntax - operand (operator) operand.
+        Example- A*B+(C/D)
+
+        2. Prefix expression is the kind of expression in which the operator is written before the operands, we take the value from right to left , but the operator from left to right.
+        Syntax- (operator) operand,operand.
+        Example- +*AB/CD
+
+        3. Postfix expression is the kind of expression in which the operator is written after the operands, and the order of evaluation is always from left to right.
+        Syntax- operator,operand (operator).
+        Example- AB*CD/+
+        */
+
+        ? ? ? "QUEUE" ~(191)
+        /*
+        Queue is a linear data structure like stacks but it follow the principle of First In First Out (FIFO), it is just like a queue of people that we see in real life , in where the first people that stands in the queue finishes the work first.
+        Enqueue: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition.
+        Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition.
+        Front: Get the front item from queue.
+        Rear: Get the last item from queue.
+        */
+
+        ? ? ? "DEQUE STL" ~
+        /*
+        Double-ended queues are sequence containers with the feature of expansion and contraction on both ends. They are similar to vectors, but are more efficient in case of insertion and deletion of elements. Unlike vectors, contiguous storage allocation may not be guaranteed.
+
+        Double Ended Queues are basically an implementation of the data structure double-ended queue. A queue data structure allows insertion only at the end and deletion from the front. This is like a queue in real life, wherein people are removed from the front and added at the back. Double-ended queues are a special case of queues where insertion and deletion operations are possible at both the ends.
+        For more information : https://www.geeksforgeeks.org/deque-cpp-stl/
+        */
+
+        ? ? ? "BINARY TREES" ~
+        /*
+        Binary Trees are hierachrial data structures that consists of three data elements - Data variable, left node variable and right node variable.The topmost node is called the root node and the two pointers associated with are left and right pointers.
+        For more information : https://www.geeksforgeeks.org/binary-tree-set-1-introduction/
+        */
+
+        ? ? ? "BINARY TREES PROPERTIES" ~
+        /*
+        1. The maximum no of nodes in a binary tree at level 'L' = 2^L. for example, at level =0 , nodes = 2^0=1.
+        2. The maximum number of nodes in a binary tree of height 'h' = 2^h-1.
+        3. In a binary tree with n nodes , the minimum no  of levels is = log(2)(n+1).
+        4. A binary tree with L leaves has atleast = (|log(2)L|+1) levels.
+        5. In Binary tree where every node has 0 or 2 children, the number of leaf nodes is always one more than nodes with two children.
+        For more information : https://www.geeksforgeeks.org/binary-tree-set-2-properties/?ref=lbp
+        */
+
+        ? ? ? "BINARY TREE TYPES" ~
+        /*
+        1. Full Binary Tree - A Binary tree is a full binary tree if all the nodes in the tree has 0 or 2 children nodes.
+        2. Complete Binary Tree - A Binary tree is a complete binary tree if it has completely filled levels except the last level and last level has all keys as left as possible.
+        3. Perfect Binary Tree - A Binary tree is a perfect binary tree if it has completely filled levels i.e every node has 2  children node , and all leaf nodes are on the same level.
+        4. Balanced Binary Tree - A binary tree is a balanced binary tree if the height of the binary tree is O(log(n)) , n is the no of nodes .
+        5. A Degenerate Tree - A binary tree is a Degenerate tree if the nodes in the tree have only one child.
+        */
+
+        ? ? ? "BINARY TREE TRAVERSALS" ~
+        /*
+        1. Inorder Traversal - Left node -> root -> right node.
+        2. PreOrder Traversal - root -> left node -> right node.
+        3. PostOrder Traversal - left node -> right node -> root.
+        */
+
+        ? ? ? "DIAMETER OF BINARY TREE" ~
+        /*
+        The diameter of the binary tree is the longest distance between two nodes in the binary tree through the root.
+        */
+
+        ? ? ? "BINARY SEARCH TREE(BST)" ~
+        /*
+        Binary Search Tree (BST) is a node based data strcuture with the following properties:
+        1. BST always contains LEFT node with LESS value than the root node .
+        2. BST always contains RIGHT node with GREATER value than the root node.
+        3. BST should not contain duplicate values.
+        4. INORDER traversal always gives nodes in the sorted order.
+        */
+
+        ? ? ? "GRAPHS" ~
+        /*
+        A Graph is a non-linear data structure consisting of edges and vertices .
+
+        Vertices - Vertices are fundamental units of graph , vertices are also known as vertex or nodes.
+
+        Edges - Edges are ued to connect two nodes of a grpah . edges can be connected in either way .
+        */
+
+        ? ? ? "TYPES OF GRAPHS" ~
+        /*
+        1.NULL Graph - Graph with no edges.
+        2.TRIVIAL Graph - Graph having only one vertex.
+        3.UNDIRECTED Graph - Graph with edges which doesnt have any direction .
+        4.DIRECTED Graph - Graph in which edge has direction .
+        5.CONNECTED Graph - Graph where from any node, we can visit every other node.
+        6.DISCONNECTED Graph - Graph where atleast one node is not reachable from every other node .
+        7.REGULAR Graph - Graph in which degree of every vertex is equal to the other vertices of the graph.
+        8.COMPLETE Graph - Graph in which from each vertices ,there is an edge to other vertices.
+        9.CYCLE Graph - Graph which is a cycle in itself , the degree of each vertex is 2.
+        10.CYCLIC Graph - Graph containing atleast one cycle.
+        11.DIRECTED ACYCLIC Graph - Graph that doesnt contain any cycle.
+        12.BIPARTITE Graph - Graph in which vertex can be divided into two sets such that vertex in each set doesnt contain any edge between them .
+        13.WEIGHTED Graph - Graph in which edges are already specified with suitable weight is known as weighted graphs ,they can be further classified into directed and undirected weighted graphs.
+        */
+
+        ? ? ? "REPRESENTATION OF GRAPHS" ~
+        /*
+
+        */
         return 0;
 }
