@@ -185,7 +185,7 @@ int main()
         ? ? ? "VIRTUAL FUNCTIONS" ~(45)
         /*
         Virtual functions are used in C++ to Access the functions of the derived class from the base class pointer.By default, the pointer will always use the base class function instead of the derived class function. But when we add the keyword virtual to the base class function of the same name as in the derived class.The function automatically  will use the function defined in the derived class.
-         * Virtual functions cannot be static.
+         *Virtual functions cannot be static.
          *Virtual functions can be friend functions of another class.
          *Virtual functions can be accessed using object pointers.
          *A virtual function in a base class might not be used.
@@ -633,7 +633,10 @@ int main()
 
         ? ? ? "REPRESENTATION OF GRAPHS" ~
         /*
+        ADJACENCY MATRIX - Graph is stored in the form of 2D matrix where rows and columns denote vertices. Each entry in the matrix denotes the weight of the edges between those vertices.
 
+        ADJACENCY LIST - Graph is represented as collection of linked lists. There is an array of pointer which points to the edges connected to that vertex.
         */
+
         return 0;
 }

@@ -2,9 +2,14 @@
 using namespace std;
 class complex
 {
-    int a, b;
+    int a=2, b=9;
 
 public:
+complex(int l,int m)
+{
+    a=l;
+    b=m;
+}
     void setdata(int v1, int v2)
     {
         a = v1;
