@@ -638,5 +638,15 @@ int main()
         ADJACENCY LIST - Graph is represented as collection of linked lists. There is an array of pointer which points to the edges connected to that vertex.
         */
 
+        ? ? ? "BFS" ~
+        /*
+        BFS is a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node). You must then move towards the next-level neighbour nodes.
+        */
+
+        ? ? ? "DFS" ~
+        /*DFS is a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse the graph until you find the desired node or the node which has no children (i.e. leaf node).
+        */
+
+       
         return 0;
 }
