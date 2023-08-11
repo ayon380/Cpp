@@ -10,19 +10,20 @@ int main()
 	int n;
 	cout<<"Enter the no of processes : ";
 	cin>>n;
-	queue<PCB> q;
+	vector<PCB> q;
 	for(int i=0;i<n;i++)
 	{
 		PCB p;
 		cout<<"Enter the details of the Process "<<i<<" :";
 		cin>>p.PID>>p.bt;
-		q.push(p);
+		q.push_back(p);
 	}
+    sort(q.begin(),q.end(),[](PCB a,PCB b){return a.bt>b.bt;});
 	int t=0;
 	while(!q.empty())
 	{
-		PCB w=q.front();
-		q.pop();
+		PCB w=q.back();
+        q.pop_back();
 		cout<<w.PID<<" - wt -> "<<t<<" ct -> "<<t+w.bt<<endl;
 		t+=w.bt;
 
